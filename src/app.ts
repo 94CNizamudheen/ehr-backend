@@ -10,7 +10,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 dotenv.config();
 
-const frontendUrl= process.env.FRONTEND_URL
+const frontendUrl= process.env.FRONTEND_URL||"http://localhost:3000"
 
 console.log("frontend url",frontendUrl)
 const app = express()
